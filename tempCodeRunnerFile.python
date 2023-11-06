@@ -1,0 +1,14 @@
+def maxProfit( k: int, prices) -> int:
+    prices.sort()
+    n = len(prices)
+    sum = 0
+    for i in range(n-k,n,1):
+        sum+= prices[i]
+    return sum
+
+prices = [4,6,-10,-1,10,-20]
+print(prices[5])
+prices.sort()
+print(prices)
+print(prices[5])
+print(maxProfit(4,prices))
